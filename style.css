@@ -130,7 +130,7 @@ li {
   color: var(--white);
   background-color: var(--green-dark);   /* shown if the photo fails to load */
   background-image:
-    linear-gradient(rgba(22, 79, 53, 0.78), rgba(22, 79, 53, 0.78)),  /* dark green layer so the text stays readable */
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(22, 79, 53, 0.55)),  /* light dark layer so the text stays readable but the photo shows */
     url("images/hero.jpg");
   background-size: cover;
   background-position: center;
@@ -138,12 +138,14 @@ li {
 }
 
 .hero h1 {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
   font-size: 3rem;
   max-width: 18ch;
   margin: 0 auto 1rem;
 }
 
 .hero p {
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
   max-width: 50ch;
   margin: 0 auto 2rem;
   font-size: 1.15rem;
