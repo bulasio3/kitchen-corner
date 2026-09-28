@@ -446,3 +446,19 @@ input[type="radio"] {
 .two-col p {
   margin-bottom: 1rem;
 }
+
+/* ---------- 15. HEADER LOGO ---------- */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-decoration: none;
+}
+
+.brand-logo {
+  height: 56px;
+  width: auto;
+  padding: 4px;
+  background-color: var(--white);
+  border-radius: 8px;
+}
