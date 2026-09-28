@@ -128,7 +128,13 @@ li {
   text-align: center;
   padding: 6rem 1.5rem;
   color: var(--white);
-  background: linear-gradient(135deg, var(--green) 0%, var(--green-dark) 100%);
+  background-color: var(--green-dark);   /* shown if the photo fails to load */
+  background-image:
+    linear-gradient(rgba(22, 79, 53, 0.78), rgba(22, 79, 53, 0.78)),  /* dark green layer so the text stays readable */
+    url("images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero h1 {
