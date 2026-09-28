@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Order food online from Cavendish Kitchen Corner.">
+  <title>Order | Cavendish Kitchen Corner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER + NAVIGATION (same on every page) -->
+  <header class="site-header">
+    <a href="index.html" class="logo">Cavendish Kitchen Corner</a>
+    <nav aria-label="Main">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="order.html" class="btn btn-small" aria-current="page">Order now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <h1>Order online</h1>
+      <p>Fill in the form and we will call to confirm.</p>
+    </section>
+
+    <section id="order" class="section alt">
+      <h2>Place Your Order</h2>
+      <form action="#" method="post" class="order-form">
+
+        <fieldset>
+          <legend>Your details</legend>
+
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" placeholder="e.g. Jane Doe" required>
+
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone" placeholder="07XX XXX XXX" required>
+
+          <label for="email">Email (optional)</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com">
+        </fieldset>
+
+        <fieldset>
+          <legend>Your meal</legend>
+
+          <label for="meal">Choose a meal</label>
+          <select id="meal" name="meal" required>
+            <option value="">-- Select a meal --</option>
+            <option value="burger">Classic Burger</option>
+            <option value="pizza">Veggie Pizza</option>
+            <option value="chicken">Chicken &amp; Chips</option>
+            <option value="rice">Rice &amp; Beans Bowl</option>
+          </select>
+
+          <label for="qty">Quantity</label>
+          <input type="number" id="qty" name="qty" min="1" max="20" value="1">
+
+          <p class="group-title">Extras</p>
+          <label class="inline"><input type="checkbox" name="extras" value="juice"> Fresh juice</label>
+          <label class="inline"><input type="checkbox" name="extras" value="soda"> Soda</label>
+          <label class="inline"><input type="checkbox" name="extras" value="sauce"> Extra sauce</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Delivery and payment</legend>
+
+          <label for="address">Delivery address</label>
+          <textarea id="address" name="address" rows="3" placeholder="Street, landmark, building..." required></textarea>
+
+          <label for="time">Preferred delivery time</label>
+          <input type="time" id="time" name="time">
+
+          <p class="group-title">Payment method</p>
+          <label class="inline"><input type="radio" name="payment" value="cash" checked> Cash on delivery</label>
+          <label class="inline"><input type="radio" name="payment" value="momo"> Mobile money</label>
+        </fieldset>
+
+        <button type="submit" class="btn">Confirm order</button>
+        <button type="reset" class="btn btn-outline">Clear form</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER (same on every page) -->
+  <footer class="site-footer">
+    <nav aria-label="Footer">
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="order.html">Order</a></li>
+      </ul>
+    </nav>
+    <address>
+      Cavendish Kitchen Corner<br>
+      Phone: <a href="tel:+256708248056">+256 708 248 056</a><br>
+      Email: <a href="mailto:j63586784@gmail.com">j63586784@gmail.com</a>
+    </address>
+    <p><small>&copy; 2026 Cavendish Kitchen Corner. Student project.</small></p>
+  </footer>
+
+</body>
+</html>

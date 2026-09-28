@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Cavendish Kitchen Corner.">
+  <title>Contact | Cavendish Kitchen Corner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER + NAVIGATION (same on every page) -->
+  <header class="site-header">
+    <a href="index.html" class="logo">Cavendish Kitchen Corner</a>
+    <nav aria-label="Main">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page" class="active">Contact</a></li>
+        <li><a href="order.html" class="btn btn-small">Order now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <h1>Contact us</h1>
+      <p>Questions, feedback or a special request? Tell us.</p>
+    </section>
+
+    <section class="section">
+      <div class="two-col">
+        <div>
+          <h2>Get in touch</h2>
+          <address class="contact-details">
+            <strong>Cavendish Kitchen Corner</strong><br>
+            Phone: <a href="tel:+256708248056">+256 708 248 056</a><br>
+            Email: <a href="mailto:j63586784@gmail.com">j63586784@gmail.com</a>
+          </address>
+          <p>Call us for urgent order changes. For everything else, send a message and we will reply within one day.</p>
+          <p>Ready to eat? <a href="order.html">Go to the order page</a>.</p>
+        </div>
+
+        <form action="#" method="post" class="order-form">
+          <fieldset>
+            <legend>Send a message</legend>
+
+            <label for="c-name">Your name</label>
+            <input type="text" id="c-name" name="name" required>
+
+            <label for="c-email">Your email</label>
+            <input type="email" id="c-email" name="email" required>
+
+            <label for="c-topic">Topic</label>
+            <select id="c-topic" name="topic">
+              <option value="feedback">Feedback</option>
+              <option value="order">Problem with an order</option>
+              <option value="event">Catering for an event</option>
+            </select>
+
+            <label for="c-msg">Message</label>
+            <textarea id="c-msg" name="message" rows="5" required></textarea>
+          </fieldset>
+          <button type="submit" class="btn">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER (same on every page) -->
+  <footer class="site-footer">
+    <nav aria-label="Footer">
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="order.html">Order</a></li>
+      </ul>
+    </nav>
+    <address>
+      Cavendish Kitchen Corner<br>
+      Phone: <a href="tel:+256700000000">+256 700 000 000</a><br>
+      Email: <a href="mailto:hello@cavendishkitchencorner.example">hello@cavendishkitchencorner.example</a>
+    </address>
+    <p><small>&copy; 2026 Cavendish Kitchen Corner. Student project.</small></p>
+  </footer>
+
+</body>
+</html>

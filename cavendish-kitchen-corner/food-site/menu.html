@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meals and prices at Cavendish Kitchen Corner.">
+  <title>Menu | Cavendish Kitchen Corner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER + NAVIGATION (same on every page) -->
+  <header class="site-header">
+    <a href="index.html" class="logo">Cavendish Kitchen Corner</a>
+    <nav aria-label="Main">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" aria-current="page" class="active">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="order.html" class="btn btn-small">Order now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <h1>Menu</h1>
+      <p>Fresh meals and drinks, with prices.</p>
+    </section>
+
+    <section id="menu" class="section">
+      <h2>Meals</h2>
+      <p class="lead">Made fresh every day with <em>local ingredients</em>.</p>
+
+      <div class="card-grid">
+        <article class="card">
+          <figure>
+            <img src="images/classic-burger.jpg" alt="Classic burger with crispy patty, lettuce and sauce in a toasted bun" class="pos-low">
+            <figcaption>Classic Burger</figcaption>
+          </figure>
+          <p>Beef patty, lettuce, tomato and cheese in a toasted bun.</p>
+          <p class="price">UGX 15,000</p>
+        </article>
+
+        <article class="card">
+          <figure>
+            <img src="images/veggie-pizza.jpg" alt="Stone-baked pizzas topped with rocket and aubergine" class="pos-low">
+            <figcaption>Veggie Pizza</figcaption>
+          </figure>
+          <p>Stone-baked base with peppers, onions and mozzarella.</p>
+          <p class="price">UGX 25,000</p>
+        </article>
+
+        <article class="card">
+          <figure>
+            <img src="images/chicken-and-chips.jpg" alt="Grilled chicken with chips, ketchup and garlic sauce on a tray" class="pos-right">
+            <figcaption>Chicken &amp; Chips</figcaption>
+          </figure>
+          <p>Crispy grilled chicken served with golden chips.</p>
+          <p class="price">UGX 18,000</p>
+        </article>
+
+        <article class="card">
+          <figure>
+            <img src="images/rice-and-beans.jpg" alt="Plate of white rice served with a spiced bean stew">
+            <figcaption>Rice &amp; Beans Bowl</figcaption>
+          </figure>
+          <p>Steamed rice with slow-cooked beans and fresh greens.</p>
+          <p class="price">UGX 10,000</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="prices" class="section alt">
+      <h2>Price List</h2>
+      <div class="table-wrap">
+        <table>
+          <caption>Meals and drinks</caption>
+          <thead>
+            <tr>
+              <th scope="col">Item</th>
+              <th scope="col">Category</th>
+              <th scope="col">Price (UGX)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Classic Burger</td><td>Main</td><td>15,000</td></tr>
+            <tr><td>Veggie Pizza</td><td>Main</td><td>25,000</td></tr>
+            <tr><td>Chicken &amp; Chips</td><td>Main</td><td>18,000</td></tr>
+            <tr><td>Rice &amp; Beans Bowl</td><td>Main</td><td>10,000</td></tr>
+            <tr><td>Fresh Juice</td><td>Drink</td><td>4,000</td></tr>
+            <tr><td>Soda</td><td>Drink</td><td>2,500</td></tr>
+          </tbody>
+          <tfoot>
+            <tr><td colspan="3">Delivery fee: UGX 3,000 within town.</td></tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER (same on every page) -->
+  <footer class="site-footer">
+    <nav aria-label="Footer">
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="order.html">Order</a></li>
+      </ul>
+    </nav>
+    <address>
+      Cavendish Kitchen Corner<br>
+      Phone: <a href="tel:+256708248056">+256 708 248 056</a><br>
+      Email: <a href="mailto:j63586784@gmail.com">j63586784@gmail.com</a>
+    </address>
+    <p><small>&copy; 2026 Cavendish Kitchen Corner. Student project.</small></p>
+  </footer>
+
+</body>
+</html>
